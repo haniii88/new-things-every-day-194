@@ -6,7 +6,7 @@ function dailyLog194() {
     { author: "Taylor", count: 4 }
   ];
 
-  const totalCommits = commits.reduc(
+  const totalCommits = commits.reduce(
     (sum, contributor) => sum + contributor.count,
     0
   );
